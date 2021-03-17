@@ -110,7 +110,7 @@ app.get('/:rnmParam',(req,res)=>{
                 if(singleURLOBJECT['SHORTURL'] === req.params.rnmParam){
                     res.redirect(singleURLOBJECT['LONGURL'])
                     break
-                }else{res.redirect('/')}
+                }
            }
        }
     })

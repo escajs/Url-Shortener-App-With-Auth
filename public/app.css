@@ -8,12 +8,6 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}.signup-f{
-    min-height: 70vh;
-    display: flex;
-}.signup-f > div{
-    min-height: 70vh;
-    width: 50%;
 }.enjoy{
     padding: 2em;
     text-align: justify;
@@ -25,4 +19,15 @@ body{
     padding-top:2em;
     width: 70%;
     margin: 0 auto;
+}@media only screen and (min-width : 601px){
+    .signup-f{
+        min-height: 70vh;
+        display: flex;
+    }
+    .signup-f > div{
+        min-height: 70vh;
+        width: 50%;
+    }.rm{
+        display: none;
+    }
 }

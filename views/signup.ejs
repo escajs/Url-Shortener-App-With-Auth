@@ -1,0 +1,47 @@
+<%- include('./partials/header')%>
+<%- include('./partials/nav.ejs')%>
+    <section>
+        <form action="/newUser" method="POST">
+            <div class="container">
+               <div class="signup-f">
+                <div class="enjoy">
+                    <h4 class="center-align">Enjoy Shrinking!</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut magni 
+                        vitae dicta, saepe quos
+                         ea, minus voluptatem velit maiores quia, reiciendis laborum a ex
+                         numquam voluptatum. Qui aliquid suscipit repellendus!
+                    </p>
+                </div>
+                <div class="signup-form">
+                  <div class="signup">
+                    <div class="row">
+                        <div class="input-field col s12">
+                          <input id="email" type="email" class="validate" autocomplete="off" name="_useremail">
+                          <label for="email">Email</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <input  id="username" type="text" minlength="4" autocomplete="off" class="validate" name="_username">
+                          <label for="username">Username</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <input  id="password" type="password" minlength="5" class="validate" name="_userpass">
+                          <label for="password">Password</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                          <div class="col s12">
+                             <h6 class="center-align"><button style="width:100%" type="submit" class="btn" style="width: 100%">Join</button></h6>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+               </div>
+            </div>
+        </form>
+    </section>
+<%- include('./partials/footer')%>

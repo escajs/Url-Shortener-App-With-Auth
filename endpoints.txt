@@ -1,0 +1,16 @@
+database name : rawUrlsDB
+collection name : rawUrlCollection
+
+------ end points : 
+/newUser : post - done
+/newUser : get (render sign up page - ejs) - done
+
+/login : post - done
+/login : get (render sign in page - ejs) - done
+
+/newLink : post : done
+/userLinks : get (show related links - depends on user)
+
+:/rnmParam : check if (rnmParam == SHORTURL) then redirect to LONGURL
+
+/showusers : get (developement route - show all documents)

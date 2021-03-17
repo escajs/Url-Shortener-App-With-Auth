@@ -1,0 +1,27 @@
+<%- include('./partials/header')%>
+<%if (user) {%>
+    <%- include('./partials/logout.ejs')%>
+    <%}else{%>
+        <%- include('./partials/nav.ejs')%>
+        <%}%>
+<div class="container">
+    <h5 style="text-transform: capitalize;">Hey, <%= user%></h5><h3 class="center-align">Your Shrinked Links</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Long Url</th>
+                <th>Short Url</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% links.forEach(url=>{%>
+                <tr>
+                    <td><a href="<%= url['LONGURL']%>"><%= url['LONGURL']%></a></td>
+                    <td><a href="<%= url['SHORTURL']%>"><%= url['SHORTURL']%></a></td>
+                </tr>
+            <%})%>
+        </tbody>
+    </table>
+    <%console.log(links)%>
+</div>
+<%-include('./partials/footer') %>

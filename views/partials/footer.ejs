@@ -1,0 +1,19 @@
+<footer class="page-footer">
+    <div class="footer-copyright transparent">
+      <div class="container">
+      <span>©&nbsp;<span id="dateMade"></span>&nbsp;Created With &hearts;</span>
+      <a class="grey-text text-lighten-4 right" href="#!">:)</a>
+      </div>
+    </div>
+  </footer>
+<script>
+    const date = new Date().getFullYear()
+    document.querySelector('#dateMade').textContent = date
+    const lgout = _=>{
+      document.cookie='6yfdout=true; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/'
+      location.assign('/')
+    }
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

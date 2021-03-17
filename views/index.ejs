@@ -1,0 +1,31 @@
+<%- include('./partials/header')%>
+<%if (_status) {%>
+    <%- include('./partials/logout.ejs')%>
+    <%}else{%>
+        <%- include('./partials/nav.ejs')%>
+        <%}%>
+     <h1 class="center-align">Url Shrinker</h1>
+     <section>
+        <form action="/newLink" method="post">
+       <div class="container">
+         <input type="url" name="_rawLink" id="_rawLink" placeholder="Type Url . . ." autocomplete="off" required="required">
+        <h2 class="center-align"><button class="btn btn-large" type="submit">Shrink</button></h2>
+        </div>
+        </form>
+     </section>
+     <!--section class="shrinked">
+       <div class="container">
+         <table class="stripped">
+            <thead>
+               <tr>
+                  <th>Full Url</th>
+                  <th>Short Url</th>
+                  <th>Visiting Time</th>
+               </tr>
+            </thead>
+         </table>
+       </div>
+     </section-->
+      
+<%- include('./partials/footer.ejs')%>
+        

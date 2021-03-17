@@ -1,0 +1,23 @@
+<%- include('./partials/header')%>
+<%- include('./partials/nav.ejs')%>
+<div class="container">
+    <section class="login-form">
+        <h3>Sign In</h3>
+        <form action="/login" method="post">
+            <div class="row">
+                <div class="input-field col s12">
+                    <input type="text" autocomplete="off" id="nm" name="_username_login">
+                    <label for="nm">Username</label>
+                </div>
+                <div class="input-field col s12">
+                    <input type="password" autocomplete="off" id="pss" name="_userpass_login">
+                    <label for="pss">Password</label>
+                </div>
+                <div class="input-field col s12">
+                    <button class="btn btn-large" class="btn-login" type="submit" style="width:100%">Login</button>
+                </div>
+            </div>
+        </form>
+    </section>
+</div>
+<%-include('./partials/footer') %>

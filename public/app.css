@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,700;1,300&display=swap');
+body{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.login-form{
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}.signup-f{
+    min-height: 70vh;
+    display: flex;
+}.signup-f > div{
+    min-height: 70vh;
+    width: 50%;
+}.enjoy{
+    padding: 2em;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}.signup{
+    padding-top:2em;
+    width: 70%;
+    margin: 0 auto;
+}
